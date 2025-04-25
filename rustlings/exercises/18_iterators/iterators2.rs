@@ -16,6 +16,11 @@ fn capitalize_first(input: &str) -> String {
 // ["hello", "world"] -> ["Hello", "World"]
 fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
     // ???
+    let mut result = words.to_vec();
+
+    result[0].to_uppercase();
+
+    result
 }
 
 // TODO: Apply the `capitalize_first` function again to a slice of string
